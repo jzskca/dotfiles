@@ -1,0 +1,36 @@
+[submodule "vim/.vim/pack/solarized/start/solarized"]
+	path = vim/.vim/pack/solarized/start/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/.vim/pack/nerdtree/start/nerdtree"]
+	path = vim/.vim/pack/nerdtree/start/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/pack/vim-airline/start/vim-airline"]
+	path = vim/.vim/pack/vim-airline/start/vim-airline
+	url = git://github.com/vim-airline/vim-airline.git
+[submodule "vim/.vim/pack/vim-airline-themes/start/vim-airline-themes"]
+	path = vim/.vim/pack/vim-airline-themes/start/vim-airline-themes
+	url = git://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/.vim/pack/vim-devicons/start/vim-devicons"]
+	path = vim/.vim/pack/vim-devicons/start/vim-devicons
+	url = git://github.com/ryanoasis/vim-devicons.git
+[submodule "vim/.vim/pack/vim-fugitive/start/vim-fugitive"]
+	path = vim/.vim/pack/vim-fugitive/start/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/pack/vim-gutentags/start/vim-gutentags"]
+	path = vim/.vim/pack/vim-gutentags/start/vim-gutentags
+	url = git://github.com/ludovicchabant/vim-gutentags.git
+[submodule "vim/.vim/pack/tagbar/start/tagbar"]
+	path = vim/.vim/pack/tagbar/start/tagbar
+	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/.vim/pack/vim-gitgutter/start/vim-gitgutter"]
+	path = vim/.vim/pack/vim-gitgutter/start/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/.vim/pack/editorconfig-vim/start/editorconfig-vim"]
+	path = vim/.vim/pack/editorconfig-vim/start/editorconfig-vim
+	url = git://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/.vim/pack/vim-commentary/start/vim-commentary"]
+	path = vim/.vim/pack/vim-commentary/start/vim-commentary
+	url = git://github.com/tpope/vim-commentary.git
+[submodule "vim/.vim/pack/vim-surround/start/vim-surround"]
+	path = vim/.vim/pack/vim-surround/start/vim-surround
+	url = git://github.com/tpope/vim-surround.git
