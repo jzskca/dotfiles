@@ -1,12 +1,21 @@
 syntax enable
 set background=dark
 colorscheme solarized
-se sts=4 sw=4 et tw=80
-set encoding=UTF-8
-set ff=unix
 
+" formatting
+set ai
+set encoding=UTF-8
+set et
+set ff=unix
+set sts=4
+set sw=4
+set tw=80
+
+" functionality
 set hidden
 set tildeop
+
+" plugins
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
@@ -29,4 +38,4 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:solarized_hitrail=1
 
 " tagbar
-nmap <F8> :TagbareToggle<CR>
+nmap <F8> :TagbarToggle<CR>
