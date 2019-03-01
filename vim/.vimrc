@@ -1,3 +1,16 @@
+" Load plugins
+packadd editorconfig-vim
+packadd nerdtree
+packadd solarized
+packadd tagbar
+packadd vim-airline
+packadd vim-airline-themes
+packadd vim-commentary
+packadd vim-devicons
+packadd vim-fugitive
+packadd vim-gutentags
+packadd vim-surround
+
 syntax enable
 set background=dark
 colorscheme solarized
