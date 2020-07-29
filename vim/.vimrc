@@ -9,6 +9,7 @@ packadd vim-commentary
 packadd vim-devicons
 packadd vim-fugitive
 packadd vim-gutentags
+packadd vim-jsx-pretty
 packadd vim-surround
 
 syntax enable
