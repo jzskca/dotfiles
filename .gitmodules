@@ -37,3 +37,15 @@
 [submodule "vim-jsx-pretty"]
 	path = vim/.vim/pack/vim-jsx-pretty/opt/vim-jsx-pretty
 	url = git://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule "vim-jinja2"]
+	path = vim/.vim/pack/vim-jinja2/opt/vim-jinja2
+	url = git://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "ale"]
+	path = vim/.vim/pack/ale/opt/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "typescript-vim"]
+	path = vim/.vim/pack/typescript-vim/opt/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vim-terraform"]
+	path = vim/.vim/pack/vim-terraform/opt/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git

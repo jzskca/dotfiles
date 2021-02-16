@@ -1,15 +1,19 @@
 " Load plugins
+packadd ale
 packadd editorconfig-vim
 packadd nerdtree
 packadd solarized
 packadd tagbar
+packadd typescript-vim
 packadd vim-airline
 packadd vim-airline-themes
 packadd vim-commentary
 packadd vim-devicons
 packadd vim-fugitive
 packadd vim-gutentags
+packadd vim-jinja2
 packadd vim-jsx-pretty
+packadd vim-terraform
 packadd vim-surround
 
 syntax enable
@@ -35,6 +39,9 @@ set mouse=a
 set number
 set smartcase
 set tildeop
+
+" Enable filetype plugins
+filetype plugin on
 
 " plugins
 
@@ -72,6 +79,16 @@ let g:airline_symbols.linenr = ''
 
 "}}} airline end
 
+" ale
+let g:ale_fixers = {
+\   'css': ['prettier'],
+\   'graphql': ['prettier'],
+\   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['prettier', 'tslint'],
+\   'yaml': ['prettier'],
+\}
+nmap <F2> :ALEFix<CR>
+nmap <F3> :ALEDetail<CR>
 
 " commentary
 autocmd FileType php setlocal commentstring=#\ %s
