@@ -49,3 +49,6 @@
 [submodule "vim-terraform"]
 	path = vim/.vim/pack/vim-terraform/opt/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "zplug"]
+	path = zsh/.zplug
+	url = https://github.com/zplug/zplug.git
