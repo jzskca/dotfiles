@@ -80,13 +80,6 @@ let g:airline_symbols.linenr = ''
 "}}} airline end
 
 " ale
-let g:ale_fixers = {
-\   'css': ['prettier'],
-\   'graphql': ['prettier'],
-\   'javascript': ['prettier', 'eslint'],
-\   'typescript': ['prettier', 'tslint'],
-\   'yaml': ['prettier'],
-\}
 nmap <F2> :ALEFix<CR>
 nmap <F3> :ALEDetail<CR>
 
