@@ -1,1 +1,1 @@
-set guifont=Hack\ Nerd\ Font\ Mono\ 10
+set guifont=MesloLGS\ NF\ 10
