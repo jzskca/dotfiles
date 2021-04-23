@@ -37,7 +37,8 @@ zplug load
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# "Note that zsh-syntax-highlighting must be the last plugin sourced."
+zplug zsh-users/zsh-syntax-highlighting, defer:2
 
 bindkey "[1;5D" backward-word
 bindkey "[1;5C" forward-word
@@ -45,6 +46,9 @@ bindkey "[1;5C" forward-word
 # Add private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
+fi
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
