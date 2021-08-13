@@ -52,3 +52,6 @@
 [submodule "zplug"]
 	path = zsh/.zplug
 	url = https://github.com/zplug/zplug.git
+[submodule "ctrlp"]
+	path = vim/.vim/pack/ctrlp/start/ctrlp
+	url = git://github.com/ctrlpvim/ctrlp.vim

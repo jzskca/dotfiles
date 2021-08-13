@@ -1,5 +1,6 @@
 " Load plugins
 packadd ale
+packadd ctrlp
 packadd editorconfig-vim
 packadd nerdtree
 packadd solarized
@@ -86,6 +87,10 @@ nmap <F3> :ALEDetail<CR>
 " commentary
 autocmd FileType php setlocal commentstring=#\ %s
 autocmd FileType yaml setlocal commentstring=#\ %s
+
+" ctrlp
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map = '<c-p>'
 
 " search highlighting
 noremap <F4> :set hlsearch! hlsearch?<CR>
