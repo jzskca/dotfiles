@@ -1,3 +1,6 @@
+" Pre-load settings
+let g:ale_completion_enabled = 1
+
 " Load plugins
 packadd ale
 packadd ctrlp
@@ -83,6 +86,8 @@ let g:airline_symbols.linenr = ''
 " ale
 nmap <F2> :ALEFix<CR>
 nmap <F3> :ALEDetail<CR>
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " commentary
 autocmd FileType php setlocal commentstring=#\ %s
@@ -91,14 +96,16 @@ autocmd FileType yaml setlocal commentstring=#\ %s
 " ctrlp
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_map = '<c-p>'
-
-" search highlighting
-noremap <F4> :set hlsearch! hlsearch?<CR>
-nnoremap <CR> :nohlsearch<CR><CR>
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v/\,(git|node_modules|__pycache__)$',
+    \ }
 
 " gitgutter
 set updatetime=100
 nmap <F6> :GitGutterLineHighlightsToggle<CR>
+
+" gutentags
+let g:gutentags_ctags_tagfile = '.tags'
 
 " nerdtree
 autocmd StdinReadPre * let s:std_in=1
@@ -111,3 +118,10 @@ let g:solarized_hitrail=1
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
+
+
+" etc
+
+" search highlighting
+noremap <F4> :set hlsearch! hlsearch?<CR>
+nnoremap <CR> :nohlsearch<CR><CR>
