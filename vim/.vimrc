@@ -39,10 +39,12 @@ set tw=80
 "set cindent
 set hidden
 set ignorecase " see smartcase below
+set incsearch
 set mouse=a
 set number
 set smartcase
 set tildeop
+set wildignore=.git,__pycache__,htmlcov,node_modules
 
 " Enable filetype plugins
 filetype plugin on
@@ -84,6 +86,7 @@ let g:airline_symbols.linenr = ''
 "}}} airline end
 
 " ale
+nmap <C-\> :ALEFindReferences<CR>
 nmap <F2> :ALEFix<CR>
 nmap <F3> :ALEDetail<CR>
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
@@ -97,8 +100,9 @@ autocmd FileType yaml setlocal commentstring=#\ %s
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v/\,(git|node_modules|__pycache__)$',
+    \ 'dir':  '\v/(\.git|__pycache__|htmlcov|node_modules)$',
     \ }
+let g:ctrlp_user_command = ['.git', 'git ls-files -co --exclude-standard']
 
 " gitgutter
 set updatetime=100
@@ -112,6 +116,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 nmap <F7> :NERDTreeToggle<CR>
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let NERDTreeRespectWildIgnore=1
 
 " solarized
 let g:solarized_hitrail=1
