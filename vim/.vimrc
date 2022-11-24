@@ -14,11 +14,13 @@ packadd vim-airline-themes
 packadd vim-commentary
 packadd vim-devicons
 packadd vim-fugitive
+packadd vim-gitgutter
 packadd vim-gutentags
 packadd vim-jinja2
 packadd vim-jsx-pretty
-packadd vim-terraform
+packadd vim-repeat
 packadd vim-surround
+packadd vim-terraform
 
 syntax enable
 set background=dark

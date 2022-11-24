@@ -55,3 +55,6 @@
 [submodule "ctrlp"]
 	path = vim/.vim/pack/ctrlp/start/ctrlp
 	url = git://github.com/ctrlpvim/ctrlp.vim
+[submodule "vim/.vim/pack/vim-repeat/opt/vim-repeat"]
+	path = vim/.vim/pack/vim-repeat/opt/vim-repeat
+	url = git@github.com:tpope/vim-repeat.git
