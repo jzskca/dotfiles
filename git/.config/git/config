@@ -1,0 +1,9 @@
+[user]
+	email = jzskca@gmail.com
+	name = Jason
+[pull]
+	ff = only
+[alias]
+	gcstat = "!du -hs .git; git gc; du -hs .git"
+[rerere]
+	enabled = true
