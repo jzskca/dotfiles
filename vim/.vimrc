@@ -1,6 +1,3 @@
-" Preload settings
-let g:ale_completion_enabled = 1
-
 runtime config/settings.vim
 runtime config/mappings.vim
 
