@@ -1,0 +1,5 @@
+[[language]]
+name = "python"
+scope = "source.python"
+formatter = { command = "black", args = ["--quiet", "-"] }
+rulers = [88]

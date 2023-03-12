@@ -1,0 +1,102 @@
+"attribute" = { fg = "violet" }
+"comment" = { fg = "base01" }
+"constant" = { fg = "cyan" }
+"constant.builtin" = { fg = "cyan", modifiers = ["bold"] }
+"constant.character.escape" = { fg = "violet", modifiers = ["italic"] }
+"constructor" = { fg = "blue" }
+"function" = { fg = "blue" }
+"function.builtin" = { fg = "blue", modifiers = ["italic"] }
+"function.macro" = { fg = "magenta" }
+"function.special" = { fg = "magenta" }
+"keyword" = { fg = "green" }
+"keyword.directive" = { fg = "orange" }
+"label" = { fg = "green" }
+"module" = { fg = "violet" }
+"namespace" = { fg = "violet" }
+"operator" = { fg = "green" }
+"special" = { fg = "orange" }
+"string" = { fg = "cyan" }
+"tag" = { fg = "magenta" }
+"type" = { fg = "yellow" }
+"type.builtin" = { fg = "yellow", modifiers = ["italic"] }
+"variable.builtin" = { fg = "cyan", modifiers = ["italic"] }
+"variable.function" = { fg = "blue" }
+
+# TODO
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading" = "blue"
+"markup.italic" = { fg = "magenta", modifiers = ["italic"] }
+"markup.link.text" = "violet"
+"markup.link.url" = { fg = "yellow", modifiers = ["underlined"] }
+"markup.list" = "violet"
+"markup.quote" = "cyan"
+"markup.raw" = "green"
+
+"diff.delta" = { fg = "orange" }
+"diff.minus" = { fg = "red" }
+"diff.plus" = { fg = "green" }
+
+"ui.background" = { bg = "base03" }
+"ui.cursor" = { fg = "base02", bg = "cyan" }
+"ui.cursor.insert" = { fg = "base03", bg = "base3" }
+"ui.cursor.match" = { fg = "base03", bg = "base00" }
+"ui.cursor.primary" = { fg = "base03", bg = "base1" }
+"ui.cursor.select" = { fg = "base02", bg = "cyan" }
+"ui.cursorline" = { bg = "base03" }
+"ui.cursorline.primary" = { bg = "base02" }
+"ui.cursorline.secondary" = { bg = "base025" }
+"ui.highlight" = { fg = "base03", bg = "yellow" }
+"ui.linenr" = { fg = "base01" }
+"ui.linenr.selected" = { fg = "blue", modifiers = ["bold"] }
+"ui.menu" = { fg = "base0", bg = "base02" }
+"ui.menu.selected" = { fg = "base1", bg = "base02", modifiers = ["bold"] }
+"ui.popup" = { fg = "base0", bg = "base02" }
+"ui.popup.info" = { bg = "base02" }
+"ui.selection" = { bg = "base0175" }
+"ui.selection.primary" = { bg = "base015" }
+"ui.statusline" = { fg = "base0", bg = "base02" }
+"ui.statusline.inactive" = { fg = "base01", bg = "base02" }
+"ui.statusline.insert" = { fg = "green" }
+"ui.statusline.normal" = { fg = "blue" }
+"ui.statusline.select" = { fg = "yellow" }
+"ui.text" = { fg = "base1" }
+"ui.text.focus" = { fg = "blue", modifiers = ["bold"] }
+"ui.virtual.indent-guide" = { fg = "base02" }
+"ui.virtual.ruler" = { bg = "base02" }
+"ui.virtual.whitespace" = { fg = "base01" }
+"ui.window" = { fg = "base01" }
+
+"error" = { fg = "red", modifiers = ["bold"] }
+"hint" = { fg = "base01", modifiers = ["bold"] }
+"info" = { fg = "blue", modifiers = ["bold"] }
+"warning" = { fg = "orange", modifiers = ["bold"] }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "base01", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+
+[palette]
+# 深色 越来越深
+# dark getting darker
+base03 = "#002b36"
+base025 = "#03303b"
+base02 = "#073642"
+base0175 = "#16404b"
+base015 = "#2c4f59"
+base01 = "#586e75"
+base00 = "#657b83"
+base0 = "#839496"
+base1 = "#93a1a1"
+base2 = "#eee8d5"
+base3 = "#fdf6e3"
+
+# 浅色 越來越浅
+# Lighter and lighter
+yellow = "#b58900"
+orange = "#cb4b16"
+red = "#dc322f"
+magenta = "#d33682"
+violet = "#6c71c4"
+blue = "#268bd2"
+cyan = "#2aa198"
+green = "#859900"
