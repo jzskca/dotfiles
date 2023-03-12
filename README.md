@@ -13,5 +13,11 @@ Things to install
 
 * `bat`
 * `fzf`
+* `gitui` and/or `lazygit`
+* `graph-easy`
+* `helix`
+* `lf` and/or `ranger`
 * `lsd`
+* `marksman`
+* `slides`
 * `stow` to manage symlinks
