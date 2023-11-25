@@ -1,5 +1,46 @@
+[language-server.docker-langserver.config.docker.languageserver.formatter]
+ignoreMultilineInstructions = true
+
+[language-server.pylsp.config.pylsp.plugins]
+black = { enabled = true }
+
+[language-server.yaml-language-server.config.yaml.schemas]
+# Kubernetes support is a little wonky right now. It's probably best to specify
+# per-project which version of the schemas to use:
+#
+#   [language-server.yaml-language-server.config.yaml.schemas]
+#   "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.21.14-standalone-strict/all.json" = [ "kubernetes/**/*.yaml" ]
+#
+# See: https://github.com/redhat-developer/yaml-language-server/pull/841
+"http://json.schemastore.org/kustomization" = ["kustomization.yaml"]
+"https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta8.json" = [
+  "skaffold.yaml",
+]
+
+[[language]]
+name = "bash"
+formatter = { command = "shfmt", args = ["-i", "4", "-ci", "-s"] }
+auto-format = true
+
+[[language]]
+name = "dockerfile"
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "git-commit"
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "markdown"
+formatter = { command = "prettier", args = ["--parser", "markdown"] }
+auto-format = true
+
 [[language]]
 name = "python"
-scope = "source.python"
-formatter = { command = "black", args = ["--quiet", "-"] }
 rulers = [88]
+auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+auto-format = true

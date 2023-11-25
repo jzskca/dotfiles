@@ -1,0 +1,4 @@
+#!/bin/sh
+size=$(du -hs .git | cut -f1)
+git gc
+echo "$size" → "$(du -hs .git | cut -f1)"

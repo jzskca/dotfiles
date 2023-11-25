@@ -45,7 +45,7 @@
 "ui.cursorline" = { bg = "base03" }
 "ui.cursorline.primary" = { bg = "base02" }
 "ui.cursorline.secondary" = { bg = "base025" }
-"ui.highlight" = { fg = "base03", bg = "yellow" }
+"ui.highlight" = { bg = "base02", modifiers = ["bold"] }
 "ui.linenr" = { fg = "base01" }
 "ui.linenr.selected" = { fg = "blue", modifiers = ["bold"] }
 "ui.menu" = { fg = "base0", bg = "base02" }

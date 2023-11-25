@@ -1,0 +1,5 @@
+map . $echo -n "$fx" | xclip -selection clipboard
+map <c-z> $kill -STOP $PPID
+map i $bat --paging always "$f"
+set icons
+set previewer lf-previewer.sh
